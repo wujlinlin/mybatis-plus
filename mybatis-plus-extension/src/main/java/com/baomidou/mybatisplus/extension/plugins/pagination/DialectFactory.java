@@ -93,7 +93,7 @@ public class DialectFactory {
                 || dbType == DbType.SINODB) {
                 dialect = new GBase8sDialect();
             } else if (dbType == DbType.SINODB) {
-                dialect = new GBase8sDialect();
+                dialect = new SinoDBDialect();
             } else if (dbType == DbType.INFORMIX) {
                 dialect = new InformixDialect();
             }
